@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B1018"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STADIOLAB"
+        android:textColor="#FFFFFF"
+        android:textSize="38sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="CÓDIGO DE ACTIVACIÓN"
+        android:textColor="#CCCCCC"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtActivationCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="CARGANDO..."
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.12"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/txtActivationStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Conectando con el servidor..."
+        android:textColor="#FF5A6E"
+        android:textSize="19sp"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Proporciona este código a tu distribuidor para activar tu dispositivo."
+        android:textColor="#BBBBBB"
+        android:textSize="16sp"
+        android:gravity="center" />
+
+</LinearLayout>

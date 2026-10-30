@@ -1,0 +1,51 @@
+﻿# Android y Gradle
+.gradle/
+**/build/
+local.properties
+*.iml
+.idea/
+.cxx/
+.externalNativeBuild/
+
+# APK y respaldos
+*.apk
+*.aab
+*.bak
+*.bak-*
+*.log
+hs_err_pid*
+replay_pid*
+respaldos/
+respaldos-xml/
+channel_logos_RESPALDO/
+
+# Archivos de trabajo y pruebas
+logos-nuevos/
+logos_nuevos/
+logos-svg-originales/
+logos_stadiolab/
+Continuar cruce de canales_files/
+Continuar cruce de canales.html
+
+# Credenciales y configuraciones privadas
+.env
+.env.*
+*.keystore
+*.jks
+*.p12
+*.pem
+*.key
+*service-account*.json
+*firebase-adminsdk*.json
+google-services.json
+
+# Archivos de prueba y respaldos en la raiz
+/*.png
+/*.webp
+/*.svg
+/*.pdf
+/*.html
+/*.java
+/*.xml
+
+# Conservar los archivos originales en la computadora

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#0B1018"
+    android:padding="48dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STADIOLAB"
+        android:textColor="#FFFFFF"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="50dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnLive"
+            android:layout_width="190dp"
+            android:layout_height="90dp"
+            android:layout_margin="10dp"
+            android:text="TV EN VIVO"
+            android:textSize="16sp"
+            android:focusable="true" />
+
+        <Button
+            android:id="@+id/btnEvents"
+            android:layout_width="190dp"
+            android:layout_height="90dp"
+            android:layout_margin="10dp"
+            android:text="EVENTOS"
+            android:textSize="16sp"
+            android:focusable="true" />
+
+        <Button
+            android:id="@+id/btnMovies"
+            android:layout_width="190dp"
+            android:layout_height="90dp"
+            android:layout_margin="10dp"
+            android:text="PELÍCULAS"
+            android:textSize="16sp"
+            android:focusable="true" />
+
+        <Button
+            android:id="@+id/btnSeries"
+            android:layout_width="190dp"
+            android:layout_height="90dp"
+            android:layout_margin="10dp"
+            android:text="SERIES"
+            android:textSize="16sp"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+</LinearLayout>

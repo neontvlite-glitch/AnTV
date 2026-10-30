@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/multiRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:keepScreenOn="true"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:id="@+id/multiHeader"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="MULTIVIEW"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="OK: ampliar   MENU: cambiar"
+            android:textColor="#BBBBBB"
+            android:textSize="12sp"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/topRow"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/cell1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:background="#444444">
+
+            <androidx.media3.ui.PlayerView
+                android:id="@+id/multiviewPlayer1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                app:surface_type="texture_view"
+                app:use_controller="false"/>
+
+            <TextView
+                android:id="@+id/multiLabel1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="#99000000"
+                android:text="VENTANA 1"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:padding="6dp"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/cell2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:background="#444444">
+
+            <androidx.media3.ui.PlayerView
+                android:id="@+id/multiviewPlayer2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                app:surface_type="texture_view"
+                app:use_controller="false"/>
+
+            <TextView
+                android:id="@+id/multiLabel2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="#99000000"
+                android:text="VENTANA 2"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:padding="6dp"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomRow"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/cell3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:background="#444444">
+
+            <androidx.media3.ui.PlayerView
+                android:id="@+id/multiviewPlayer3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                app:surface_type="texture_view"
+                app:use_controller="false"/>
+
+            <TextView
+                android:id="@+id/multiLabel3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="#99000000"
+                android:text="VENTANA 3"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:padding="6dp"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/cell4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:background="#444444">
+
+            <androidx.media3.ui.PlayerView
+                android:id="@+id/multiviewPlayer4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                app:surface_type="texture_view"
+                app:use_controller="false"/>
+
+            <TextView
+                android:id="@+id/multiLabel4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="#99000000"
+                android:text="VENTANA 4"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"
+                android:padding="6dp"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

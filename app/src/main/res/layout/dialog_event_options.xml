@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="480dp" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/event_dialog_background" android:padding="20dp">
+  <TextView android:id="@+id/eventDialogTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="SELECCIONAR OPCIÓN" android:textColor="#FFD54F" android:textSize="22sp" android:textStyle="bold" android:gravity="center" android:layout_marginBottom="12dp" />
+  <TextView android:id="@+id/eventDialogSubtitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Selecciona una transmisión" android:textColor="#FFFFFF" android:textSize="15sp" android:gravity="center" android:layout_marginBottom="12dp" />
+  <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="310dp" android:fillViewport="false">
+    <LinearLayout android:id="@+id/eventOptionsContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:descendantFocusability="afterDescendants" />
+  </ScrollView>
+</LinearLayout>

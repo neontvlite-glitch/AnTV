@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#000000" android:keepScreenOn="true">
+  <androidx.media3.ui.PlayerView android:id="@+id/eventsPlayer" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#000000" android:visibility="gone" app:resize_mode="fit" app:use_controller="false" />
+  <LinearLayout android:id="@+id/eventsMenu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="bottom" android:orientation="vertical" android:paddingStart="20dp" android:paddingEnd="20dp" android:paddingTop="14dp" android:paddingBottom="18dp" android:background="@android:color/transparent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/eventsTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="EVENTOS EN VIVO DEL DÍA"
+            android:textColor="#FFFFFF"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/eventsClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="--:--"
+            android:textColor="#FFD700"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/eventsMultiview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="125dp"
+            android:minHeight="40dp"
+            android:padding="10dp"
+            android:background="@drawable/event_card_background"
+            android:gravity="center"
+            android:text="MULTIVIEW"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:focusable="true"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/eventsSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/eventsList" android:layout_width="match_parent" android:layout_height="155dp" android:clipChildren="false" android:clipToPadding="false" android:overScrollMode="never" android:descendantFocusability="afterDescendants" />
+  </LinearLayout>
+</FrameLayout>
+
